@@ -18,4 +18,53 @@
     };
     sp(5,4,3,2,1);
     sp(...arr);//Spread operator for sending large amounts of arguments
+    console.log("Functions");
+    //Write a function that takes two arrays as input and
+    //returns a new array containing all elements from both arrays using the spread operator.
+    const join=(array1,array2)=>{
+        const joinedArray=[...array1,...array2];//Deep copy
+        return joinedArray;
+    };
+    console.log(join(arr,arr4));
+    console.log("Objects");
+    const obj1={
+        name: "Ali",
+        age: 22
+    };
+    const obj2={
+        name: "Hassan",
+        age:26,
+        obj3:{
+            name: "Tahir",
+            age: 30
+        }
+    };
+    //Write a function called mergeObjects that takes two objects as input and
+    //returns a new object containing all key-value pairs from both objects using the spread operator.
+    const mergeObjects=(nobj1,nobj2)=>{
+        const mergedObj={nobj1,nobj2};//Deep or Shallow???
+        return mergedObj;
+    };
+    console.log(mergeObjects({...obj1},{...obj2}));
+    //Write a function called filterUniqueValues that takes multiple arrays as input and
+    //returns a single array containing only unique values from all arrays using the spread operator.
+    const filterUniqueValues=(array1,array2)=>{
+                
+    };
+
+
+
+
+
+
+
+
+
+    
+    // const obj5={...obj2};
+    // const obj4={...obj2,...obj1};
+    // console.log(obj4);
+    // console.log(obj5);
+    // const {...obj6}={...obj1,...obj2};
+    // console.log(obj6);
 }
