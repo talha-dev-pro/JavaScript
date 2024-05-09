@@ -1,6 +1,6 @@
 {
-    //mostly on the right side of the assignment operator
-    //usually it is used to expand arrays, making deep copies of arrays
+    // mostly on the right side of the assignment operator
+    // usually it is used to expand arrays, making deep copies of arrays
     //for example
     const arr=[0,1,2,3,4];
     const arr2=arr;//here a reference is made, shallow copy
@@ -39,6 +39,12 @@
             age: 30
         }
     };
+    // const obj5={...obj2};
+    const obj4={...obj1,...obj2};//because of same keys the later object will be overwritten and it will be displayed
+    console.log(obj4);
+    // console.log(obj5);
+    // const {...obj6}={...obj1,...obj2};
+    // console.log(obj6);
     //Write a function called mergeObjects that takes two objects as input and
     //returns a new object containing all key-value pairs from both objects using the spread operator.
     const mergeObjects=(nobj1,nobj2)=>{
@@ -52,19 +58,6 @@
                 
     };
 
-
-
-
-
-
-
-
-
+   
     
-    // const obj5={...obj2};
-    // const obj4={...obj2,...obj1};
-    // console.log(obj4);
-    // console.log(obj5);
-    // const {...obj6}={...obj1,...obj2};
-    // console.log(obj6);
 }
