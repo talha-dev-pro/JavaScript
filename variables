@@ -1,5 +1,4 @@
 //primitive data types:
-
 const a=5;
 // a=6; cannot assign to a const variable error
 // const a=2; cannot re-declare const... error
@@ -15,4 +14,24 @@ console.log(c);
 var c=100;
 // you can re-assign and redeclare var variable... no error, but not professional use
 console.log(c)
+
+let x=0//number data type
+let y="String"//String data type
+let z=null//Null data 
+let w=undefined//undefined data
+
+//NON-primitive data types:
+let array=[1,"One",null,undefined,];//Array data type
+console.log(array);
+let object={//Object data type
+    name:"Ali",//Key/Value pairs...'name' is key, 'Ali is value'
+    age:26,
+    arr:array//non-primitive data type passed to another non-primitive data type
+};
+console.log(object);
+
+console.log(i);// var lets hoisting
+var i=300;
+
+
 
