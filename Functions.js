@@ -8,7 +8,7 @@
         b=newB;
     };
     const changeVal=(UpdatebyRef)=>{
-        updateVal(3,4);
+        UpdatebyRef(3,4);
     };
     changeVal(updateVal);
     console.log(a,b);
