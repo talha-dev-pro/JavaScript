@@ -55,6 +55,29 @@
   const [a, b] = arrObj;
   console.log(a, b);
   const { name } = a;
-  const { name2 } = b;
-  console.log(name, name2);
+  const { age } = b;
+  console.log(name, age);
+
+  const num = (() => {
+    //iffe function
+    return 2;
+  })();
+  const y =
+    (() => {
+      return 2;
+    })() + 3; //iffe function
+  const z = num + 3;
+  const x = new Number(2) + 3;
+  console.log("y is: " + y);
+  console.log("x is: " + x);
+  console.log("z is: " + z);
+
+  const obj5 = {
+    num: 2,
+    valueOf() {
+      return this.num;
+    },
+  };
+  const newNum = obj5 + 3;
+  console.log(newNum);
 }
